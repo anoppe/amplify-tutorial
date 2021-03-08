@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/devices/{macAddress}",
+            "lambdaFunction": "getDevice",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/devices/*"
+        }
+    ],
+    "resourceName": "networkdevicesapi",
+    "apiName": "networkdevicesapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "getDevice"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyapp-dev-163159-authRole",
+        "unAuthRoleName": "amplify-amplifyapp-dev-163159-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getDevice",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

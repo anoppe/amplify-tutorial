@@ -1,0 +1,5 @@
+{
+    "tableName": "networkdevicesdatabase",
+    "partitionKeyName": "mac-address",
+    "partitionKeyType": "S"
+}
