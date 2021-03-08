@@ -20,6 +20,12 @@
       },
       "auth": {
         "amplifyappb756bbd5": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "djwksp6o1to93",
+          "type": "cicd"
+        }
       }
     }
   }
